@@ -7,3 +7,4 @@
 5. [N으로 표현(0621)](/hojeong/solution0621.go)<br>
 6. 디스크 컨트롤러(0707) 안했음 ㅎㅎ<br>
 7. [입국심사(0712)](/hojeong/solution0712.go)<br>
+8. [소수찾기(0719)](/hojeong/solution0719.go)<br>
