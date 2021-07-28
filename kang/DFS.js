@@ -1,5 +1,5 @@
 
-solution("hit","cog",	["hot", "dot", "dog", "lot", "log", "cog"])
+solution("hit","cog",	["dot", "dog", "lot", "log", "cog", "hot"])
 function solution(begin, target, words) {
   var answer = 0;
   let answers = [];
@@ -27,6 +27,7 @@ function solution(begin, target, words) {
     ary.push(ary.shift());
   })
   console.log(Math.min.apply(null, answers));
+
 }
 
 function dfs(begin, target, copy, answers, count){
@@ -36,7 +37,7 @@ function dfs(begin, target, copy, answers, count){
     if(canChange(begin, word)) {
       answers.push(count+1);
     }
-    return
+    return;
   }
   if(canChange(begin, word)) {
       dfs(word, target, list, answers, count+1);
