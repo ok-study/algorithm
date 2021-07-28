@@ -8,3 +8,5 @@
 6. 디스크 컨트롤러(0707) 안했음 ㅎㅎ<br>
 7. [입국심사(0712)](/hojeong/solution0712.go)<br>
 8. [소수찾기(0719)](/hojeong/solution0719.go)<br>
+8. [큰 수 만들기(go)(0726)](/hojeong/solution0726.go)<br>
+8. [큰 수 만들기(js)(0726)](/hojeong/solution0726.js)<br>
