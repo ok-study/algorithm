@@ -4,22 +4,17 @@
 
 // price가 3인 놀이기구를 4번 타고 싶은 고객이 가진 현금이 20이면
 // (3*1) + (3*2) + (3*3) + (3*4) = 30
+// 1n+2n+...+kn = nk(k+1)/2
 // 30-20은 10
 
 import Foundation
 
-func solution(_ price: Int, _ money: Int, _ count: Int) -> Int {
-  var answer: Int = 0
+func solution(_ price: Int, _ money: Int, _ count: Int) -> Int64 {
+  let totalPrice = price * (count * (count+1) / 2)
   
-  for index in 1...count {
-    answer += price * index
-  }
+  if money >= totalPrice { return 0 }
   
-  answer -= money
-  
-  if answer < 0 { answer = 0 }
-  
-  return answer
+  return Int64(totalPrice - money)
 }
 
 
